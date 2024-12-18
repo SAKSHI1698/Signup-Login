@@ -9,3 +9,19 @@ function signup(username){
     }
 console.log(signup('sakshi'))
 console.log(signup('neha'))
+
+function login (username,password){
+    let name=["sakshi","tina","pooja"]
+    const correctpass ="sak@16";
+
+    if(!name.includes(username)){
+        return "User Not Found,Please Signup";}
+        else if(password !==correctpass){
+            return "Wrong password";
+        } else{ 
+            return "Login Successful..."
+        }
+        }
+        console.log(login('sakshi','sak@16'))
+        console.log(login('neha','sak@16'))
+        console.log(login('tina','sak@00'))
